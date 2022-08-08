@@ -573,7 +573,12 @@
         </div>
         <form>
           <label for="submit">Подпишитесь на рассылку</label>
-          <input type="mail" id="submit" />
+          <input
+            type="email"
+            id="submit"
+            name="footer-submit"
+            placeholder="E-mail"
+          />
           <button type="submit">Подписаться</button>
         </form>
       </div>
@@ -585,6 +590,36 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <b>Оставьте свои данные, мы вам перезвоним</b>
+        <form>
+          <ul>
+            <li>
+              <label for="name">Имя</label>
+              <input type="text" name="reg-name" id="name" />
+            </li>
+            <li>
+              <label for="tel">Телефон</label>
+              <input type="tel" name="reg-tel" id="tel" />
+            </li>
+            <li>
+              <label for="email">Почта</label>
+              <input type="email" name="reg-email" id="email" />
+            </li>
+          </ul>
+          <label for="comment"></label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Введите текст"
+          ></textarea>
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="">условия договора</a></label
+          >
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
