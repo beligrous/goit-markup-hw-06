@@ -574,6 +574,7 @@ ul {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
@@ -608,12 +609,17 @@ ul {
   margin-left: 93px;
 }
 
+.footer-form-wrap {
+  display: flex;
+}
+
 .footer-field {
+  display: inline;
   width: 358px;
   height: 50px;
   background-color: transparent;
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
 }
@@ -629,6 +635,9 @@ ul {
 }
 
 .footer-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   min-width: 200px;
   background-color: var(--activ-text-color);
@@ -639,8 +648,22 @@ ul {
   line-height: 30px;
   letter-spacing: 0.06em;
   border: none;
-  text-align: left;
   padding: 10px 29px;
+  margin-left: 12px;
+  transition: background-color var(--trans-duration) var(--trans-time-function);
+}
+
+.footer-submit-icon {
+  fill: #ffffff;
+}
+
+.footer-submit:hover,
+.footer-submit:focus {
+  background-color: #188ce8;
+}
+
+.footer-btn-content {
+  margin-right: 10px;
 }
 
 /* Модальное окно */
