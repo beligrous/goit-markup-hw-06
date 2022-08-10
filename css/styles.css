@@ -569,7 +569,8 @@ ul {
   margin-left: 70px;
 }
 
-.join-title {
+.footer-title {
+  display: block;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -602,6 +603,47 @@ ul {
 .join-icon {
   fill: #ffffff;
 }
+
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-field {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+}
+
+.footer-field::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-submit {
+  height: 50px;
+  min-width: 200px;
+  background-color: var(--activ-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  border: none;
+  text-align: left;
+  padding: 10px 29px;
+}
+
+/* Модальное окно */
 
 .overlay {
   position: fixed;
