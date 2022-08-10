@@ -519,7 +519,7 @@
           </address>
         </div>
         <div class="join">
-          <h3 class="join-title">Присоединяйтесь</h3>
+          <b class="join-title">Присоединяйтесь</b>
           <ul class="join-list">
             <li class="list">
               <a
@@ -583,6 +583,7 @@
         </form>
       </div>
     </footer>
+    <!-- Модал окно -->
     <div class="overlay is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
@@ -590,34 +591,60 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <b>Оставьте свои данные, мы вам перезвоним</b>
-        <form>
+        <form class="modal-form">
+          <b class="modal-form-title"
+            >Оставьте свои данные, мы вам перезвоним</b
+          >
           <ul>
             <li>
-              <label for="name">Имя</label>
-              <input type="text" name="reg-name" id="name" />
+              <label class="name-label" for="name">Имя</label>
+              <input
+                class="name-field"
+                type="text"
+                name="reg-name"
+                id="name"
+                placeholder=" "
+              />
             </li>
             <li>
-              <label for="tel">Телефон</label>
-              <input type="tel" name="reg-tel" id="tel" />
+              <label class="tel-label" for="tel">Телефон</label>
+              <input
+                class="tel-field"
+                type="tel"
+                name="reg-tel"
+                id="tel"
+                placeholder=" "
+              />
             </li>
             <li>
-              <label for="email">Почта</label>
-              <input type="email" name="reg-email" id="email" />
+              <label class="email-label" for="email">Почта</label>
+              <input
+                class="email-field"
+                type="email"
+                name="reg-email"
+                id="email"
+                placeholder=" "
+              />
             </li>
           </ul>
-          <label for="comment"></label>
+          <label class="comment-label" for="comment">Комментарий</label>
           <textarea
+            class="comment-field"
             name="comment"
             id="comment"
             cols="30"
             rows="10"
             placeholder="Введите текст"
           ></textarea>
-          <input type="checkbox" name="policy" id="policy" />
-          <label for="policy"
+          <input
+            class="policy-field"
+            type="checkbox"
+            name="policy"
+            id="policy"
+          />
+          <label class="policy-label" for="policy"
             >Соглашаюсь с рассылкой и принимаю
-            <a href="">условия договора</a></label
+            <a class="policy-link" href="">условия договора</a></label
           >
         </form>
       </div>
