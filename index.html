@@ -581,7 +581,7 @@
               name="footer-submit"
               placeholder="E-mail"
             />
-            <button class="footer-submit" type="submit">
+            <button class="button-submit" type="submit">
               <span class="footer-btn-content">Подписаться</span>
               <svg class="footer-submit-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -595,49 +595,65 @@
     <div class="overlay is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
-          <svg width="18" height="18">
+          <svg class="modal-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <form class="modal-form">
-          <b class="modal-form-title"
-            >Оставьте свои данные, мы вам перезвоним</b
-          >
+          <p class="modal-form-title">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
           <ul>
-            <li>
-              <label class="name-label" for="name">Имя</label>
-              <input
-                class="name-field"
-                type="text"
-                name="reg-name"
-                id="name"
-                placeholder=" "
-              />
+            <li class="list">
+              <label class="modal-label" for="name">Имя</label>
+              <div class="modal-form-wrap">
+                <input
+                  class="field"
+                  type="text"
+                  name="reg-name"
+                  id="name"
+                  placeholder=" "
+                  autofocus
+                />
+                <svg width="18" height="18" class="form-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
             </li>
-            <li>
-              <label class="tel-label" for="tel">Телефон</label>
-              <input
-                class="tel-field"
-                type="tel"
-                name="reg-tel"
-                id="tel"
-                placeholder=" "
-              />
+            <li class="list">
+              <label class="modal-label" for="tel">Телефон</label>
+              <div class="modal-form-wrap">
+                <input
+                  class="field"
+                  type="tel"
+                  name="reg-tel"
+                  id="tel"
+                  placeholder=" "
+                />
+                <svg width="18" height="18" class="form-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </li>
-            <li>
-              <label class="email-label" for="email">Почта</label>
-              <input
-                class="email-field"
-                type="email"
-                name="reg-email"
-                id="email"
-                placeholder=" "
-              />
+            <li class="list">
+              <label class="modal-label" for="email">Почта</label>
+              <div class="modal-form-wrap">
+                <input
+                  class="field"
+                  type="email"
+                  name="reg-email"
+                  id="email"
+                  placeholder=" "
+                />
+                <svg width="18" height="18" class="form-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
             </li>
           </ul>
-          <label class="comment-label" for="comment">Комментарий</label>
+          <label class="modal-label" for="comment">Комментарий</label>
           <textarea
-            class="comment-field"
+            class="comment-field field"
             name="comment"
             id="comment"
             cols="30"
@@ -654,6 +670,7 @@
             >Соглашаюсь с рассылкой и принимаю
             <a class="policy-link" href="">Условия договора</a></label
           >
+          <button class="button-submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
